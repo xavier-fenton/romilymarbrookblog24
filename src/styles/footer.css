@@ -1,0 +1,30 @@
+.footer-main-wrapper{
+  position: absolute;
+  bottom: 0px;
+  width: 100dvw;
+}
+
+
+.footer-content-wrapper{
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  align-items: center;
+}
+.footer-title{
+  font-size: x-small;
+  font-weight: 900;
+}
+.contact-underline{
+  text-decoration: underline;
+}
+
+.footer-border{
+  border-bottom: 2px solid #cecece;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
