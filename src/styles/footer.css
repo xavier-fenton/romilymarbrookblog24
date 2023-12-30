@@ -16,9 +16,11 @@
   font-size: x-small;
   font-weight: 900;
 }
-.contact-underline{
+.contact-underline a{
   text-decoration: underline;
+  color: black;
 }
+
 
 .footer-border{
   border-bottom: 2px solid #cecece;
