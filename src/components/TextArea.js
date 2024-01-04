@@ -53,28 +53,30 @@ export default function TextArea() {
 
   return (
     <>
-      {posts &&
-        posts.map((data) => {
-          return (
-            <div key={data._id} className="textarea-main-wrapper">
-              <div className="textarea-wrapper">
-                <div className="textarea-content-wrapper">
-                  <div id={data._id} className="textarea-wrapper">
-                    <div className="textarea-title">{data.title}</div>
-                    <div className="textarea-content">
-                      {toPlainText(data.content)}
+      <div className="textarea-component-main">
+        {posts &&
+          posts.map((data) => {
+            return (
+              <div key={data._id} className="textarea-main-wrapper">
+                <div className="textarea-wrapper">
+                  <div className="textarea-content-wrapper">
+                    <div id={data._id} className="textarea-wrapper">
+                      <div className="textarea-title">{data.title}</div>
+                      <div className="textarea-content">
+                        {toPlainText(data.content)}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="textarea-date">
-                  <div className="textarea-date-border"></div>
-                  <span className="date-time">Published: </span>
-                  <span className="day-time">{data.published_at}</span>
+                  <div className="textarea-date">
+                    <div className="textarea-date-border"></div>
+                    <span className="date-time">Published: </span>
+                    <span className="day-time">{data.published_at}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+      </div>
     </>
   )
 }
