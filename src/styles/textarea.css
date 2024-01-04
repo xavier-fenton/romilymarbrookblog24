@@ -1,26 +1,31 @@
+
+.textarea-component-main{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
 .textarea-main-wrapper{
   padding: 20px;
 }
 
 .textarea-content-wrapper{
   display: flex;
-  padding: 10px;
   flex-direction: column;
-  padding-left: 100px;
   padding-right: 100px;
 }
 
 .textarea-content-wrapper{
-  padding: 20px;
+  padding: 20px 20px 20px 0px
 }
 .textarea-title{
   font-size: xxx-large;
   font-weight: 800;
-  padding: 10px;
+  padding-left: 10px;
 }
 .textarea-content{
   padding: 10px;
-  padding-left: 40px;
   padding-right: 40px;
 
 }
@@ -47,7 +52,8 @@
 }
 
 .text-area-paragraphs{
-  padding-bottom: 2px;
+  padding-bottom: 10px;
+  padding-right: 20%;
 }
 
 @media (max-width: 768px) {
@@ -71,7 +77,11 @@
     padding-bottom: 20px;
   }
   .textarea-title {
-    font-size: xx-large;
+    font-size: large;
+}
+.text-area-paragraphs{
+ 
+  padding: 10px;
 }
 
 }
