@@ -1,5 +1,3 @@
-import isUniqueAcrossAllDocuments from '../helperfunctions/isUniqueAcrossAllDocuments'
-
 export default {
   title: 'Posts',
   name: 'Posts',
@@ -30,6 +28,13 @@ export default {
         },
         {
           type: 'image',
+          fields: [
+            {
+              name: 'alternative',
+              type: 'string',
+              title: 'Caption',
+            },
+          ],
         },
       ],
     },
@@ -37,15 +42,6 @@ export default {
       title: 'Published at',
       name: 'published_at',
       type: 'date',
-    },
-    {
-      title: 'uniqueToPost',
-      name: 'setForEachNewPost',
-      type: 'slug',
-      options: {
-        source: 'string',
-        slugify: isUniqueAcrossAllDocuments(),
-      },
     },
   ],
 }
