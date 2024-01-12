@@ -7,36 +7,48 @@
 
 
 .textarea-main-wrapper{
-  padding: 20px;
+  padding-left: 20px; 
+  padding-bottom: 20px; 
+
+
 }
 
 .textarea-content-wrapper{
   display: flex;
   flex-direction: column;
-  padding-right: 100px;
 }
 
-.textarea-content-wrapper{
-  padding: 20px 20px 20px 0px
-}
+
 .textarea-title{
   font-size: xxx-large;
   font-weight: 800;
   padding-left: 10px;
+  padding-bottom: 10px;
+
+  width: fit-content;
 }
 .textarea-content{
-  padding: 10px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.textarea-content p{
+  padding-top: 10px;
 
+  width: 80%;
+}
+
+.textarea-content img{
+  padding: 0px 0px 0px 0px;
+  height: 100%;
 }
 
 .textarea-date{
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-top: 10px;
   padding-left: 10px;
   font-size: small;
+  width: fit-content;
 }
 .date-time{
   font-weight: 600;
@@ -56,13 +68,20 @@
   padding-right: 20%;
 }
 
+.textarea-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+}
+
 @media (max-width: 768px) {
   /* tablets and below*/
   .textarea-content{
     padding: 5px;
     padding-left: 15px;
     padding-right: 10px;
-    font-size: medium;
+    font-size: small;
   }
 
   .textarea-content-wrapper{
@@ -78,10 +97,28 @@
   }
   .textarea-title {
     font-size: large;
-}
-.text-area-paragraphs{
+  }
+  .text-area-paragraphs{
+  
+    padding: 10px;
+  } 
+
  
-  padding: 10px;
+
+  .textarea-content img{
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .textarea-wrapper{
+    width: 100%;
+  }
+
 }
 
+@media (max-width: 968px ){
+  .textarea-content p{
+    width: 100%;
+    padding-left: 0px !important;
+  }
 }
